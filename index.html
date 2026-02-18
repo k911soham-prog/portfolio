@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- SEO -->
-    <title>Soham Kshirsagar | Web Developer</title>
-    <meta name="description" content="Soham Kshirsagar — Web developer building fast, modern, and practical web applications." />
+    <title>Soham Kshirsagar | Full-Stack Web Developer</title>
+    <meta name="description" content="Soham Kshirsagar — Full-stack developer building fast, modern, practical web applications." />
 
-    <!-- Tailwind (Use build version for production later) -->
+    <!-- Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- Icons -->
@@ -27,6 +27,10 @@
         .fade-up.visible {
             opacity: 1;
             transform: translateY(0);
+        }
+
+        .project-card:hover{
+            box-shadow: 0 0 30px rgba(0,255,159,.25);
         }
     </style>
 </head>
@@ -51,16 +55,21 @@
 <!-- HERO -->
 <section class="min-h-screen flex items-center justify-center px-6 text-center">
     <div class="max-w-4xl">
-        <h1 class="text-5xl md:text-7xl font-bold mb-6">
+        <h1 class="text-5xl md:text-7xl font-bold mb-4">
             Soham Kshirsagar
         </h1>
 
+        <p class="text-gray-500 mb-6">
+            17 • India • Available for freelance
+        </p>
+
         <p class="text-2xl md:text-4xl accent mb-6 font-semibold">
-            Web Developer
+            Full-Stack Web Developer
         </p>
 
         <p class="text-lg md:text-xl text-gray-400 mb-10 leading-relaxed">
-            I build fast, clean, and useful web tools that solve real problems. Focused on performance, simplicity, and great user experience.
+            I build fast, modern web applications focused on performance and real-world usefulness.  
+            I care about clean code, great UX, and products people actually enjoy.
         </p>
 
         <div class="flex gap-6 justify-center flex-wrap">
@@ -85,9 +94,10 @@
         </h2>
 
         <p class="text-lg text-gray-400 leading-relaxed">
-            I'm a developer who enjoys turning ideas into fast, modern, and reliable web applications. My focus is writing clean code, building practical tools, and continuously improving my skills.
+            I'm a builder who enjoys turning ideas into real products.  
+            I focus on writing clean, efficient code and designing experiences that feel smooth and intuitive.
             <br><br>
-            I love exploring new technologies, optimizing performance, and creating products people genuinely enjoy using.
+            Currently obsessed with improving my skills, exploring new technologies, and pushing every project further than the last.
         </p>
     </div>
 </section>
@@ -98,13 +108,14 @@
     <div class="max-w-6xl mx-auto">
 
         <h2 class="text-5xl md:text-6xl font-bold text-center accent mb-16">
-            Featured Projects
+            Selected Projects
         </h2>
 
         <div class="grid md:grid-cols-2 gap-10">
 
             <!-- Project -->
-            <a href="https://gummatous-cain-boldhearted.ngrok-free.dev/" target="_blank" class="group border neon-border rounded-2xl p-8 hover:scale-[1.02] transition bg-[#111]">
+            <a href="https://gummatous-cain-boldhearted.ngrok-free.dev/" target="_blank"
+            class="project-card group border neon-border rounded-2xl p-8 hover:scale-[1.02] transition bg-[#111]">
                 <h3 class="text-2xl font-bold mb-3 group-hover:text-[#00ff9f] transition">
                     Universal Downloader
                 </h3>
@@ -120,13 +131,14 @@
 
 
             <!-- Project -->
-            <a href="https://k911soham-prog.github.io/BDAY/" target="_blank" class="group border neon-border rounded-2xl p-8 hover:scale-[1.02] transition bg-[#111]">
+            <a href="https://k911soham-prog.github.io/BDAY/" target="_blank"
+            class="project-card group border neon-border rounded-2xl p-8 hover:scale-[1.02] transition bg-[#111]">
                 <h3 class="text-2xl font-bold mb-3 group-hover:text-[#00ff9f] transition">
                     Birthday Wisher
                 </h3>
 
                 <p class="text-gray-400 mb-6">
-                    Just a fun interactive birthday page built to create memorable moments.
+                    A fun interactive birthday experience designed to create memorable moments.
                 </p>
 
                 <div class="text-sm accent font-semibold">
@@ -149,33 +161,13 @@
 
         <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-10 text-6xl">
 
-            <div class="hover:scale-110 transition">
-                <i class="fab fa-react accent"></i>
-            </div>
-
-            <div class="hover:scale-110 transition">
-                <i class="fab fa-node-js accent"></i>
-            </div>
-
-            <div class="hover:scale-110 transition">
-                <i class="fab fa-js accent"></i>
-            </div>
-
-            <div class="hover:scale-110 transition">
-                <i class="fab fa-python accent"></i>
-            </div>
-
-            <div class="hover:scale-110 transition">
-                <i class="fas fa-database accent"></i>
-            </div>
-
-            <div class="hover:scale-110 transition">
-                <i class="fas fa-code accent"></i>
-            </div>
-
-            <div class="hover:scale-110 transition">
-                <i class="fas fa-code-branch accent"></i>
-            </div>
+            <div class="hover:scale-110 transition"><i class="fab fa-react accent"></i></div>
+            <div class="hover:scale-110 transition"><i class="fab fa-node-js accent"></i></div>
+            <div class="hover:scale-110 transition"><i class="fab fa-js accent"></i></div>
+            <div class="hover:scale-110 transition"><i class="fab fa-python accent"></i></div>
+            <div class="hover:scale-110 transition"><i class="fas fa-database accent"></i></div>
+            <div class="hover:scale-110 transition"><i class="fas fa-code accent"></i></div>
+            <div class="hover:scale-110 transition"><i class="fas fa-code-branch accent"></i></div>
 
         </div>
     </div>
@@ -196,12 +188,17 @@
 
         <div class="flex justify-center gap-12 text-5xl mb-8">
 
-            <a href="mailto:k911soham@gmail.com" target="_blank" rel="noopener noreferrer" class="hover:scale-125 transition accent">
+            <a href="mailto:k911soham@gmail.com" target="_blank" class="hover:scale-125 transition accent">
                 <i class="fas fa-envelope"></i>
             </a>
 
-            <a href="https://www.instagram.com/dev_soham_/" target="_blank" rel="noopener noreferrer" class="hover:scale-125 transition accent">
+            <a href="https://www.instagram.com/dev_soham_/" target="_blank" class="hover:scale-125 transition accent">
                 <i class="fab fa-instagram"></i>
+            </a>
+
+            <!-- ADD YOUR GITHUB -->
+            <a href="https://github.com/k911soham-prog" target="_blank" class="hover:scale-125 transition accent">
+                <i class="fab fa-github"></i>
             </a>
 
         </div>
@@ -213,26 +210,24 @@
 </section>
 
 
-<!-- FOOTER -->
 <footer class="py-8 text-center border-t neon-border text-gray-500">
     © 2026 Soham Kshirsagar
 </footer>
 
 
-<!-- ANIMATION SCRIPT -->
 <script>
-    const observer = new IntersectionObserver((entries)=>{
-        entries.forEach(entry=>{
-            if(entry.isIntersecting){
-                entry.target.classList.add("visible")
-            }
-        })
-    },{threshold:.15})
-
-    document.querySelectorAll("section").forEach(section=>{
-        section.classList.add("fade-up")
-        observer.observe(section)
+const observer = new IntersectionObserver((entries)=>{
+    entries.forEach(entry=>{
+        if(entry.isIntersecting){
+            entry.target.classList.add("visible")
+        }
     })
+},{threshold:.15})
+
+document.querySelectorAll("section").forEach(section=>{
+    section.classList.add("fade-up")
+    observer.observe(section)
+})
 </script>
 
 </body>
