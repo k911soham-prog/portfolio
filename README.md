@@ -1,49 +1,338 @@
-# 👋 Hi, I'm Soham Kshirsagar
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-Full-stack web developer building fast, clean, and practical web applications.
+    <!-- SEO & Metadata -->
+    <title>Soham Kshirsagar | Full-Stack Web Developer</title>
+    <meta name="description" content="Soham Kshirsagar — 17yo Full-stack developer building fast, modern, and practical web applications." />
+    <meta name="keywords" content="Soham Kshirsagar, Web Developer, Full-Stack, Portfolio, India, Freelance" />
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://github.com/k911soham-prog">
+    <meta property="og:title" content="Soham Kshirsagar | Full-Stack Web Developer">
+    <meta property="og:description" content="I build fast, modern web applications focused on performance and real-world usefulness.">
+    <meta property="og:image" content="https://raw.githubusercontent.com/k911soham-prog/k911soham-prog/main/og-image.png">
 
-I focus on performance, usability, and writing code that actually makes sense.  
-I enjoy turning ideas into working products and improving messy systems until they run smoothly.
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
 
----
+    <!-- Icons & Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
 
-## 🚀 What I Do
+    <style>
+        :root {
+            --accent: #00ff9f;
+            --accent-glow: rgba(0, 255, 159, 0.35);
+        }
+        
+        body {
+            font-family: 'JetBrains Mono', monospace;
+        }
 
-- Build responsive frontend interfaces
-- Develop backend APIs and logic
-- Integrate REST APIs
-- Debug, optimize, and improve existing codebases
-- Design clean and usable UI experiences
+        .accent { color: var(--accent); }
+        .bg-accent { background-color: var(--accent); }
+        .neon-border { border-color: var(--accent-glow); }
 
----
+        .fade-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+        }
 
-## 🛠 Tech Stack
+        .fade-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
 
-**Frontend:**  
-HTML, CSS, JavaScript  
+        .project-card {
+            transition: all 0.3s ease;
+        }
 
-**Backend:**  
-Python (FastAPI)  
+        .project-card:hover {
+            box-shadow: 0 0 30px var(--accent-glow);
+            border-color: var(--accent);
+        }
 
-**Database:**  
-MongoDB  
+        .glass-nav {
+            background: rgba(11, 11, 11, 0.8);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
 
-**Tools & Concepts:**  
-REST APIs, Git, GitHub, Deployment, Performance Optimization  
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #0b0b0b; }
+        ::-webkit-scrollbar-thumb { background: #222; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: var(--accent); }
+    </style>
+</head>
 
----
+<body class="bg-[#0b0b0b] text-gray-200 selection:bg-[#00ff9f] selection:text-black">
 
-## 🌐 Portfolio
+<!-- NAV -->
+<nav class="fixed top-0 w-full z-50 glass-nav border-b neon-border">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+        <a href="#" class="text-2xl font-bold accent tracking-tighter">SK<span class="text-white">_</span></a>
 
-🔗 https://k911soham-prog.github.io/soham-portfolio/
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex gap-8 font-medium">
+            <a href="#about" class="hover:text-[#00ff9f] transition">About</a>
+            <a href="#projects" class="hover:text-[#00ff9f] transition">Projects</a>
+            <a href="#skills" class="hover:text-[#00ff9f] transition">Skills</a>
+            <a href="#contact" class="hover:text-[#00ff9f] transition">Contact</a>
+        </div>
 
----
+        <!-- Mobile Toggle -->
+        <button id="menu-btn" class="md:hidden text-2xl accent focus:outline-none" aria-label="Toggle Menu">
+            <i class="fas fa-bars"></i>
+        </button>
+    </div>
 
-## 📬 Contact
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-black/95 border-b neon-border">
+        <div class="flex flex-col p-6 space-y-4 text-center">
+            <a href="#about" class="text-xl hover:text-[#00ff9f]">About</a>
+            <a href="#projects" class="text-xl hover:text-[#00ff9f]">Projects</a>
+            <a href="#skills" class="text-xl hover:text-[#00ff9f]">Skills</a>
+            <a href="#contact" class="text-xl hover:text-[#00ff9f]">Contact</a>
+        </div>
+    </div>
+</nav>
 
-- Instagram: https://instagram.com/dev_soham  
-- Email: k911soham@gmail.com  
 
----
+<!-- HERO -->
+<section class="min-h-screen flex items-center justify-center px-6 text-center">
+    <div class="max-w-4xl">
+        <div class="inline-block px-4 py-1 border neon-border rounded-full text-sm mb-6 bg-black/50">
+            <span class="accent">●</span> Available for freelance
+        </div>
 
-⭐ Open to freelance work, collaborations, and continuous learning.
+        <h1 class="text-5xl md:text-8xl font-extrabold mb-4 tracking-tight">
+            Soham <span class="accent">Kshirsagar</span>
+        </h1>
+
+        <p class="text-gray-500 mb-6 font-mono">
+            17 • India • Building the future
+        </p>
+
+        <p class="text-2xl md:text-4xl font-bold mb-8">
+            Full-Stack <span class="accent">Web Developer</span>
+        </p>
+
+        <p class="text-lg md:text-xl text-gray-400 mb-12 leading-relaxed max-w-2xl mx-auto">
+            I craft performance-driven, accessible web applications that solve real-world problems. 
+            Focused on clean code and exceptional user experiences.
+        </p>
+
+        <div class="flex gap-6 justify-center flex-wrap">
+            <a href="#projects" class="px-8 py-4 bg-accent text-black font-bold rounded-lg hover:brightness-110 hover:-translate-y-1 transition-all duration-300">
+                Explore Projects
+            </a>
+
+            <a href="#contact" class="px-8 py-4 border border-[#00ff9f] rounded-lg hover:bg-[#00ff9f] hover:text-black font-bold transition-all duration-300">
+                Let's Talk
+            </a>
+        </div>
+    </div>
+</section>
+
+
+<!-- ABOUT -->
+<section id="about" class="py-32 px-6">
+    <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-4xl md:text-5xl font-bold mb-12 accent flex items-center justify-center gap-4">
+            <span class="h-px w-12 bg-[#00ff9f]/30"></span>
+            About Me
+            <span class="h-px w-12 bg-[#00ff9f]/30"></span>
+        </h2>
+
+        <p class="text-lg md:text-xl text-gray-400 leading-relaxed text-left">
+            I'm a developer who thrives at the intersection of design and logic. I specialize in building robust full-stack applications that are not only functional but also visually striking.
+            <br><br>
+            My approach is simple: <span class="text-white">Code for people, not just compilers.</span> I enjoy dissecting complex problems and rebuilding them into intuitive digital experiences.
+        </p>
+    </div>
+</section>
+
+
+<!-- PROJECTS -->
+<section id="projects" class="py-32 px-6 bg-[#080808]">
+    <div class="max-w-6xl mx-auto">
+        <h2 class="text-4xl md:text-5xl font-bold text-center accent mb-20">Recent Work</h2>
+
+        <div class="grid md:grid-cols-2 gap-8">
+            <!-- Project 1 -->
+            <div class="project-card group border neon-border rounded-xl overflow-hidden bg-[#111] flex flex-col">
+                <div class="p-8 flex-grow">
+                    <div class="flex justify-between items-start mb-4">
+                        <i class="fas fa-cloud-arrow-down text-3xl accent"></i>
+                        <div class="flex gap-2">
+                            <span class="text-[10px] bg-gray-800 px-2 py-1 rounded text-gray-300">REACT</span>
+                            <span class="text-[10px] bg-gray-800 px-2 py-1 rounded text-gray-300">NODE.JS</span>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 group-hover:text-[#00ff9f] transition">Universal Downloader</h3>
+                    <p class="text-gray-400 mb-6 text-sm">A streamlined multi-platform media downloader. Built with focus on speed and zero-bloat user interface.</p>
+                </div>
+                <a href="https://gummatous-cain-boldhearted.ngrok-free.dev/" target="_blank" class="p-4 bg-black/40 border-t neon-border text-center text-sm font-bold accent hover:bg-[#00ff9f] hover:text-black transition">
+                    Live Demo <i class="fas fa-external-link-alt ml-2"></i>
+                </a>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card group border neon-border rounded-xl overflow-hidden bg-[#111] flex flex-col">
+                <div class="p-8 flex-grow">
+                    <div class="flex justify-between items-start mb-4">
+                        <i class="fas fa-birthday-cake text-3xl accent"></i>
+                        <div class="flex gap-2">
+                            <span class="text-[10px] bg-gray-800 px-2 py-1 rounded text-gray-300">JS</span>
+                            <span class="text-[10px] bg-gray-800 px-2 py-1 rounded text-gray-300">GSAP</span>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 group-hover:text-[#00ff9f] transition">Birthday Wisher</h3>
+                    <p class="text-gray-400 mb-6 text-sm">Interactive web experience for special occasions. Features custom animations and immersive storytelling elements.</p>
+                </div>
+                <a href="https://k911soham-prog.github.io/BDAY/" target="_blank" class="p-4 bg-black/40 border-t neon-border text-center text-sm font-bold accent hover:bg-[#00ff9f] hover:text-black transition">
+                    Visit Site <i class="fas fa-external-link-alt ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- SKILLS -->
+<section id="skills" class="py-32 px-6">
+    <div class="max-w-5xl mx-auto text-center">
+        <h2 class="text-4xl md:text-5xl font-bold accent mb-20">Tech Stack</h2>
+
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-12">
+            <div class="group flex flex-col items-center gap-4 transition-all duration-300 hover:-translate-y-2">
+                <i class="fab fa-react text-5xl accent group-hover:scale-110 transition"></i>
+                <span class="text-xs text-gray-500 uppercase font-bold tracking-widest">React</span>
+            </div>
+            <div class="group flex flex-col items-center gap-4 transition-all duration-300 hover:-translate-y-2">
+                <i class="fab fa-node-js text-5xl accent group-hover:scale-110 transition"></i>
+                <span class="text-xs text-gray-500 uppercase font-bold tracking-widest">Node.js</span>
+            </div>
+            <div class="group flex flex-col items-center gap-4 transition-all duration-300 hover:-translate-y-2">
+                <i class="fab fa-js text-5xl accent group-hover:scale-110 transition"></i>
+                <span class="text-xs text-gray-500 uppercase font-bold tracking-widest">JavaScript</span>
+            </div>
+            <div class="group flex flex-col items-center gap-4 transition-all duration-300 hover:-translate-y-2">
+                <i class="fab fa-python text-5xl accent group-hover:scale-110 transition"></i>
+                <span class="text-xs text-gray-500 uppercase font-bold tracking-widest">Python</span>
+            </div>
+            <div class="group flex flex-col items-center gap-4 transition-all duration-300 hover:-translate-y-2">
+                <i class="fas fa-database text-5xl accent group-hover:scale-110 transition"></i>
+                <span class="text-xs text-gray-500 uppercase font-bold tracking-widest">Databases</span>
+            </div>
+            <div class="group flex flex-col items-center gap-4 transition-all duration-300 hover:-translate-y-2">
+                <i class="fas fa-code text-5xl accent group-hover:scale-110 transition"></i>
+                <span class="text-xs text-gray-500 uppercase font-bold tracking-widest">Tailwind</span>
+            </div>
+            <div class="group flex flex-col items-center gap-4 transition-all duration-300 hover:-translate-y-2">
+                <i class="fab fa-git-alt text-5xl accent group-hover:scale-110 transition"></i>
+                <span class="text-xs text-gray-500 uppercase font-bold tracking-widest">Git</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- CONTACT -->
+<section id="contact" class="py-32 px-6 bg-[#080808]">
+    <div class="max-w-3xl mx-auto text-center">
+        <h2 class="text-4xl md:text-5xl font-bold accent mb-8">Get In Touch</h2>
+        <p class="text-gray-400 mb-12 text-lg">Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+
+        <div class="flex justify-center gap-10 text-4xl mb-12">
+            <a href="mailto:k911soham@gmail.com" class="hover:scale-125 hover:text-[#00ff9f] transition-all text-gray-500" aria-label="Email">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <a href="https://www.instagram.com/dev_soham_/" target="_blank" class="hover:scale-125 hover:text-[#00ff9f] transition-all text-gray-500" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://github.com/k911soham-prog" target="_blank" class="hover:scale-125 hover:text-[#00ff9f] transition-all text-gray-500" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+
+        <a href="mailto:k911soham@gmail.com" class="text-xl font-bold accent hover:underline">
+            k911soham@gmail.com
+        </a>
+    </div>
+</section>
+
+
+<footer class="py-10 text-center border-t neon-border text-gray-600 bg-black">
+    <p class="text-sm">Built with <i class="fas fa-heart text-red-500"></i> by Soham Kshirsagar</p>
+    <p class="mt-2 text-[10px] uppercase tracking-widest">© 2026 • All Rights Reserved</p>
+</footer>
+
+<!-- Scroll to Top -->
+<button id="to-top" class="fixed bottom-8 right-8 bg-[#111] border neon-border w-12 h-12 rounded-full hidden flex items-center justify-center accent hover:bg-[#00ff9f] hover:text-black transition-all z-40">
+    <i class="fas fa-chevron-up"></i>
+</button>
+
+<script>
+// Mobile Menu Toggle
+const menuBtn = document.getElementById('menu-btn');
+const mobileMenu = document.getElementById('mobile-menu');
+
+menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+    const icon = menuBtn.querySelector('i');
+    icon.classList.toggle('fa-bars');
+    icon.classList.toggle('fa-times');
+});
+
+// Scroll Reveal
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+        }
+    });
+}, { threshold: 0.1 });
+
+document.querySelectorAll("section").forEach(section => {
+    section.classList.add("fade-up");
+    observer.observe(section);
+});
+
+// Back to Top
+const toTop = document.getElementById('to-top');
+window.addEventListener('scroll', () => {
+    if (window.pageYOffset > 300) {
+        toTop.classList.remove('hidden');
+        toTop.classList.add('flex');
+    } else {
+        toTop.classList.add('hidden');
+        toTop.classList.remove('flex');
+    }
+});
+
+toTop.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+// Close mobile menu on link click
+document.querySelectorAll('#mobile-menu a').forEach(link => {
+    link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        const icon = menuBtn.querySelector('i');
+        icon.classList.add('fa-bars');
+        icon.classList.remove('fa-times');
+    });
+});
+</script>
+
+</body>
+</html>
